@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="img"> -->
+    <title> Photo Gallery </title>
+    <style>
+        body{
+            background: rgb(34, 89, 119);
+            margin: 20px;
+            font-family: Arial;
+            color: white ;
+        }
+        .thumbnail img{
+            /* height: 80px; */
+            padding: 1px;
+            height: 80px;
+            margin: 0 10px 10px 0;
+        }
+
+        .thumbnail img:hover{
+            border: 4px solid #00ccff;
+            filter: grayscale(66);
+        }
+
+        .preview img {
+            border: 4px solid #444;
+            padding: 1px;
+            max-width: 800px;
+            height: 600px;
+        }
+        h1, .preview, #container, .preview {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1> My Web Page Gallery </h1>
+        <br>
+        <div class="thumbnail">
+            <img onmouseover="preview.src=Img1.src" src="img/IMG-20210426-WA0003.jpg"  name="Img1">
+            <img onmouseover="preview.src=Img2.src" src="img/IMG_20220702_001523_403.jpg" name="Img2">
+            <img onmouseover="preview.src=Img3.src" src="img/IMG_20220702_083401_044.jpg"  name="Img3">
+            <img onmouseover="preview.src=Img4.src" src="img/IMG_20220703_211116.jpg" name="Img4">
+            <img onmouseover="preview.src=Img5.src" src="img/IMG_20220704_011934.jpg"  name="Img5">
+            <img onmouseover="preview.src=Img6.src" src="img/IMG_20220728_160215_391.jpg"  name="Img6">
+            <img onmouseover="preview.src=Img7.src" src="img/Snapchat-677242777.jpg" name="Img7">
+        </div>
+        <br>
+        <div class="preview">
+            <img name="preview" src="img/IMG-20210426-WA0003.jpg">
+        </div>
+    </div>
+</body>
+</html>
